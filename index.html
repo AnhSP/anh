@@ -4,19 +4,22 @@
 	<title>Mobilestore</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
-      *{
-            background-color: #585445;
-        }
+        .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
         .chu{
-            color: white;
+            color:  #7566ffd0;
+        }
+        .chu2{
+            color: hwb(200 37% 0%) ;
         }
         .tieuDe{
             font-size:larger;
-            color: #9bbcee;
-            
         }
         .phan{
-            color: #66CCFF;
+            color:  #7566ffd0;
+            background-color:hwb(200 37% 0%);
         }
         .dacBiet{
             color: #FFFF00;
@@ -27,51 +30,90 @@
 	</style>
 </head>
 <body>
-
-	<div class="tieuDe">
-        <h1>About Victoria Kirst</h1>
+    <div class="tieuDe">
+        <h1>Dog D.Dog</h1>
     </div>
-	<div>
-		<span class="chu">My name is Victoria and i am </span>
-		<span class="dacBiet"> jolly</span>
-		<span class="chu">,</span>
-		<span class="dacBiet">clumsy</span>
-		<span class="chu">, and </span>
-		<span class="dacBiet"> four-eyed </span>
-		<span class="chu">.</span>
-	</div>
-	<hr>
+    <h2 class="phan">About</h2>
+    <p>Woof woof</p>
+    <div>
+        <span>Hi, I'm Dog. I love </span>
+        <span class="chu">User Interface Design</span>
+        <span>.</span>
+    </div>
+    <div class="flex-container">
+        <h2 class="phan">Courses</h2>
+        <img src="File Anh/vui.jpg" height="200px">
+    </div>
+    <p>Here are some courses i've taken.</p>
+    <table border="1" style="border-collapse:collapse;" >
+		<tr>
+			<th class="bangChu"> Course Number</th>
+			<th> Course Title </th>
+			<th> Semester Taken</th>
+		</tr>
+		<tr>
+			<th colspan="3"> For Credit</th>
+		</tr>
+		<tr>
+			<th class="chu"> 6.813</th>
+			<th class="chu2"> User Interface Design</th>
+			<th class="chu2"> Spring 2014</th>
+		</tr>
+		<tr>
+			<th class="chu"> 6.034</th>
+			<th> Artificial Intelligence</th>
+			<th> Fall 2013</th>
+		</tr>
+		<tr>
+			<th class="chu"> 6.006</th>
+			<th> Introduction to Algorithms</th>
+			<th> Fall 2013</th>
+		</tr>
+		<tr>
+			<th colspan="3"> Listener</th>
+		</tr>
+		<tr>
+			<th class="chu2"> 6.867</th>
+			<th> Machine Learning</th>
+			<th> Fall 2013</th>
+		</tr>
+		<tr>
+			<th class="chu2"> 6.830</th>
+			<th> Database Systems</th>
+			<th> Fall 2012</th>
+		</tr>
+    </table>
 
-	<h2 class="phan">My Classes This Quarter</h2>
-	<ul class="chu">
-		<li>CSE 451 - Operating Systems</li>
-		<li>CSE 471 - Computer Design and Organization</li>
-		<li>PHYS 121 - Physics: Mechanics</li>
-		<li>CSE 498 - Research w/ Prof. Luis Ceze</li>
-	</ul>
-
-	<h2 class="phan">My Favorite Movies</h2>
-
-	<p class="chu">(I actually don't watch too many movies, so...here goes!)</p>
-	<ol class="chu">
-		<li> The last 30 minutes of Forrest Gump (<u class="hot">IMDB</u>) </li>
-		<li> Star Trek Episode V with Zazu (<u class="hot">IMDB</u>)</li>
-		<li> Fight Club (not really, but i've seen like 3 movies total so this is my 3rd fave by technicality) (<u class="hot">IMDB</u>)</li>
-	</ol>
-
-	<h3 class="phan">My Moods</h3>
-	<div class="chu">
-        <span>Happy: </span>
-        <img src="/bạch miêu_ (7).jpg" height="200">
-        <span>Sad: </span>
-        <img src="/Nuoc-mat_-8-1920x1080.jpg" height="200">
+    <h2 class="phan">Interests</h2>
+    <div>
+        <span>I am Interests</span>
+        <b>HCI</b>
+        <span>, memes, and youtube videos.</span>
     </div>
 
-    <h2 class="phan">Fun Facts About My Neighbors</h2>
-    <ul class="chu">
-        <li>Sue Smith: Effervescent is a word that describes her.</li>
-        <li>Bill Thompson: Loves playing Yu-Gi-Oh.</li>
-    </ul>
+    <h2 class="phan">Submit Pet Information</h2>
+    <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+    <form action="">
+        <div>
+            <label>
+                Name:
+            </label>
+            <input type="text">
+        </div>
+        <div>
+            <label>
+                Phylum:
+            </label>
+            <input type="text">
+        </div>
+        <div>
+            <label>
+                Gender:
+            </label>
+            <input type="text">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
 
